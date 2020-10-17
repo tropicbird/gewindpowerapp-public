@@ -1,0 +1,8 @@
+venv/
+
+#ToDo uncomment below for GitHub
+__pycache__/
+settings_secret.py
+ga.html
+/staticfiles/admin/
+.idea/

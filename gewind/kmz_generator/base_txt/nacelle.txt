@@ -1,0 +1,42 @@
+	<Placemark>
+		<name>nacelle</name>
+		<LookAt>
+			<!-- ここ -->
+			<longitude>XXX</longitude>
+			<latitude>XXX</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>45</tilt>
+			<range>1000</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Model id="model_4">
+			<altitudeMode>relativeToGround</altitudeMode>
+			<Location>
+				<!-- ここ -->
+				<longitude>XXX</longitude>
+				<latitude>XXX</latitude>
+				
+				<!-- ここ -->
+				<altitude>XXX</altitude>
+			</Location>
+			<Orientation>
+				<heading>XXX</heading>
+				<tilt>0</tilt>
+				<roll>0</roll>
+			</Orientation>
+			<Scale>
+				<x>1</x>
+				<y>1</y>
+				<z>1</z>
+			</Scale>
+			<Link>
+				
+				<!-- 相対パスに変更 -->
+				<href>files/nacelle.dae</href>
+			</Link>
+			<ResourceMap>
+			</ResourceMap>
+		</Model>
+	</Placemark>

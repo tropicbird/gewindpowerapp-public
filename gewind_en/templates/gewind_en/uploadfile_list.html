@@ -1,0 +1,31 @@
+{% extends 'gewind_en/base.html' %}
+{% load static %}
+
+{% block title %}Samples{% endblock %}
+
+{% block content %}
+
+    <h1>Sample files</h1>
+{#    {% for uploadfile in object_list %}#}
+{#        <br>#}
+{#        <a href="{{ uploadfile.file.url }}"> {{ uploadfile.file }} </a>#}
+{#    {% endfor %}#}
+{#    (*birdstrike prevention version)#}
+{#    <br>#}
+{#    <br>#}
+
+    <h3><a href="https://www.dropbox.com/s/vmzenaofqjso3en/sample1_en.kmz?dl=1">sample1_en.kmz</a></h3>
+    <p><img src="{% static "gewind_en/sample1.jpg" %}"></p>
+    <br>
+    <h3><a href="https://www.dropbox.com/s/g49dq7gegnwlz5z/sample2_en.kmz?dl=1">sample2_en.kmz</a></h3>
+    <p><img src="{% static "gewind_en/sample2.jpg" %}"></p>
+    <br>
+    <h3><a href="https://www.dropbox.com/s/0aios1pk4xdnv4d/sample3_en.kmz?dl=1">sample3_en.kmz</a></h3>
+    <p><img src="{% static "gewind_en/sample3.jpg" %}"></p>
+    <br>
+    <h3><a href="https://www.dropbox.com/s/5crwczssa6cv7ie/sample4_en.kmz?dl=1">sample4_en.kmz</a></h3>
+    <p><img src="{% static "gewind_en/sample4.jpg" %}"></p>
+    <br>
+    <h3><a href="https://www.dropbox.com/s/6nbne6abz3wqmhw/sample5_en.kmz?dl=1">sample5_en.kmz</a>(*birdstrike prevention version)</h3>
+    <p><img src="{% static "gewind_en/sample5.jpg" %}"></p>
+{% endblock %}

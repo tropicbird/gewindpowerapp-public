@@ -1,0 +1,32 @@
+{% extends 'gewind_en/base.html' %}
+{% load static %}
+
+{% block title %}Top{% endblock %}
+
+{% block content %}
+
+    <h1>Welcome!</h1>
+    <p><img src="{% static "gewind_en/sample1.jpg" %}" class="topimg"></p>
+    <br>
+    <p>
+    This site is a free web app that generates a 3D model of wind turbines that you can open on Google Earth.
+        The file format is KMZ, so that you can open with the desktop version of Google Earth.
+        If you don't have the desktop version of Google Earth installed on your PC yet, you can download it from
+        <a href="https://www.google.com/earth/versions/#download-pro">here</a>.
+    </p>
+        <br>
+
+    You can use this web app in any way you like, but we designed this web app for the following two applications.<br><br>
+        <ul>
+            <li>To share and review a wind farm project with its stakeholders before and after the construction</li>
+            <li>To make a simple prediction of the impacts of a wind farm project on landscape in Environmental Impact Assessment</li>
+        </ul>
+    <br>
+
+
+    If you have any questions about this site or requests for features of this web app, please contact me via
+    <a href="mailto:tropicbird38@gmail.com">tropicbird38@gmail.com</a>.<br>
+    <br>
+    <p align="right">(Updated: 10/09/2020)</p>
+
+{% endblock %}

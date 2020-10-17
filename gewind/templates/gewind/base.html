@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  {% if GOOGLE_ANALYTICS_TRACKING_ID %}
+    {% include 'gewind/ga.html' %}
+  {% endif %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<br>
+<p><a href="{% url 'gewind:top' %}">日本語</a> | <a href="{% url 'gewind_en:top' %}">English</a></p>
+<header>Google Earth上に風車をつくるWebアプリ</header>
+<nav>
+    <a href="{% url 'gewind:top' %}">トップ</a>
+    <a href="{% url 'gewind:howto' %}">使い方</a>
+    <a href="{% url 'gewind:make' %}">風車をつくる</a>
+    <a href="{% url 'gewind:example' %}">サンプル</a>
+    <a href="{% url 'gewind:about' %}">管理人</a>
+
+</nav>
+
+<style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            color:#333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        body > header{
+            color:#999;
+            font-size:36px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        body > nav {
+            {#color:#999;#}
+            font-size:20px;
+            {#margin-top: 50px;#}
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        body > nav > a{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        div.sample1 {
+
+        display: inline-block;
+
+        text-align: center;
+            width:1000px;
+
+        }
+
+        div.field {
+
+        display: inline-block;
+
+        text-align: center;
+
+        width: 1000px;
+
+        }
+
+        div.col-1 {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            /* border: solid 1px; */
+        }
+        div.col-2 {
+            display: inline-block;
+            width: 180px;
+            text-align: left;
+            /* border: solid 1px; */
+        }
+        div.col-3 {
+            display: inline-block;
+            width: 550px;
+            text-align: left;
+            /* border: solid 1px; */
+        }
+        div.col-4 {
+            display: inline-block;
+            text-align: left;
+            margin-block-end: 10px;
+            margin-block: 10px;
+            /* border: solid 1px; */
+        }
+
+        div.col-5 {
+            display: inline-block;
+            text-align: left;
+            margin-block-end: 10px;
+            margin-block: 10px;
+            margin-right: 10px;
+            /* border: solid 1px; */
+        }
+
+        div.button_wrapper{
+            text-align:center;
+}
+        #kmzinfo {
+            font-size: 30px;
+            padding: 10px;
+        }
+
+
+        img{
+            width:100%;
+            height:auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img.topimg{
+            display: block;
+            width: 60%;
+        }
+    </style>
+
+<hr>
+<br>
+{% block content %}{% endblock %}
+
+</body>
+</html>

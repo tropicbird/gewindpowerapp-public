@@ -1,0 +1,33 @@
+{% extends 'gewind/base.html' %}
+{% load static %}
+
+{% block title %}トップ{% endblock %}
+
+{% block content %}
+
+
+
+    <h1>はじめに</h1>
+    <p><img src="{% static "gewind/sample1.jpg" %}" class="topimg"></p>
+    <br>
+    <p>
+    このサイトはGoogle Earth（グーグルアース）上で開ける風車の3Dモデルを生成する無料のWebアプリです。
+        デスクトップ版Google Earthで開けるKMZファイルを出力します。お使いのPCにまだGoogle Earthをインストールされていない方は
+        <a href="https://www.google.com/earth/versions/#download-pro">こちらからダウンロードができます。</a>
+    </p>
+        <br>
+    一応、このWebアプリの使い道として以下の2点を想定していますが、適宜お好きな用途にお使いください。<br><br>
+        <ul>
+            <li>風力発電施設の建設前後におけるイメージの共有、検討</li>
+            <li>環境アセスメントにおける景観への影響の簡易予測</li>
+        </ul>
+    <br>
+
+
+
+    本サイトに関するお問い合わせや、機能に関する要望がありましたら
+    <a href="mailto:tropicbird38@gmail.com">tropicbird38@gmail.com</a>までご連絡ください。<br>
+    <br>
+    <p align="right">（更新日：2020年10月9日）</p>
+
+{% endblock %}

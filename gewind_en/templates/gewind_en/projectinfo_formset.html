@@ -1,0 +1,105 @@
+{% extends "gewind_en/base.html" %}
+
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    {{ inlines.as_table }}
+    {{ inlines.management_form }}
+
+    <script type="text/javascript">
+    <!--
+    function check(){
+        if(window.confirm('Do you proceed to create a downloadable file with the information you\'ve entered? ')){ // 確認ダイアログを表示
+            return true; // 「OK」時は送信を実行
+        }
+        else{ // 「キャンセル」時の処理
+            window.alert('The process is canceled.'); // 警告ダイアログを表示
+            return false; // 送信を中止
+        }
+    }
+    // -->
+    </script>
+
+    <form method="post" onSubmit="return check()">
+        {% csrf_token %}
+
+        <table>
+                <h1 align="left">Step 1. Input the general information</h1>
+            <p>Please input the specification of the wind turbines you want to create in the form below.
+                Regarding the 3D model of the wind turbine in this app, the diameter of the tower is set to 4 meters,
+                and the size of the nacelle is set to 4 meter &times; 4 meter &times; 12 meter.</p>
+            <br>
+<div>
+    <div>
+        <div class="sample1">
+        {% for field in form %}
+        <div style="float:left;">
+             <div class="col-1">
+                 <b>{{ field.label_tag }}</b>
+            </div>
+            <div class="col-2">
+            {{ field }}
+            </div>
+            <div class="col-3">
+            {{ field.help_text }}
+            </div>
+            <br>
+        {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+        </table>
+    <p align="right">
+        (Reference for the birdstrike prevention:
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/ece3.6592">May et al. (2020)</a>,
+        <a href="https://www.bbc.com/news/science-environment-53909825">BBC (2020)</a>)
+    </p>
+
+　　　　　　　　　　　　　　　 {# インラインはinlinesという変数にリストで入っている #}
+        <h1 align="left">Step 2. Input the coordinates of the wind turbines</h1>
+    <p>Please enter the coordinates of any number of wind turbines (up to 10) in decimal format (e.g. 134.43233).
+        If your coordinates are other format such as 60-decimal notation (e.g. 134 degrees 25 minutes 56 seconds),
+        please convert the format to decimal format first. You can leave the "Wind turbine name" field blank,
+        but if you type in, for example, "WT1", it will be easier for you to recognize the wind turbine on Googe Earth.
+        </p>
+
+
+
+
+    <br>
+    <div>
+    <div class="sample1">
+        <table>
+            {% for formset in inlines %}
+                {# formset.management_form　は必須 #}
+                {{ formset.management_form }}
+
+                {% for form in formset %}
+                    {% for field in form %}
+                        {# field.errors　は必須 #}
+                        {{ field.errors }}
+                        {% if field.help_text %}
+
+                        <div class="col-4">
+                            <b>{{ field.label_tag }}</b>
+                        </div>
+                        <div class="col-5">
+                        {{ field }}
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+                    <br>
+                {% endfor %}
+            {% endfor %}
+        </table>
+
+    </div>
+        <div class="button_wrapper">
+        <button type="submit" id="kmzinfo" >Step 3. Generate the wind turbines (i.e. kmz file)</button>
+    </div>
+    </div>
+    </div>
+    </form>
+
+{% endblock %}

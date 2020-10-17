@@ -1,0 +1,179 @@
+	<Placemark>
+		<name>blade</name>
+		<LookAt>
+			<!-- ここ -->
+			<longitude>XXX</longitude>
+			<latitude>XXX</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>45</tilt>
+			<range>1000</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Model id="model_8">
+			<altitudeMode>relativeToGround</altitudeMode>
+			<Location>
+				<!-- ここ -->
+				<longitude>XXX</longitude>
+				<latitude>XXX</latitude>
+				
+				<!-- ここ -->
+				<altitude>XXX</altitude>
+			</Location>
+			<Orientation>
+				<heading>XXX</heading>
+				<tilt>0</tilt>
+				
+				<!-- ここ -->
+				<roll>0</roll>
+			</Orientation>
+			<Scale>
+				<x>1</x>
+				<y>1</y>
+				<!-- ここ -->
+				<z>XXX</z>
+			</Scale>
+			<Link>
+				<!-- 相対パスに変更 -->
+				<href>files/blade_paint_it_black_bottom.dae</href>
+			</Link>
+			<ResourceMap>
+			</ResourceMap>
+		</Model>
+	</Placemark>
+
+	<Placemark>
+		<name>blade</name>
+		<LookAt>
+			<!-- ここ -->
+			<longitude>XXX</longitude>
+			<latitude>XXX</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>45</tilt>
+			<range>1000</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Model id="model_8">
+			<altitudeMode>relativeToGround</altitudeMode>
+			<Location>
+				<!-- ここ -->
+				<longitude>XXX</longitude>
+				<latitude>XXX</latitude>
+
+				<!-- ここ -->
+				<altitude>XXX</altitude>
+			</Location>
+			<Orientation>
+				<heading>XXX</heading>
+				<tilt>0</tilt>
+
+				<!-- ここ -->
+				<roll>0</roll>
+			</Orientation>
+			<Scale>
+				<x>1</x>
+				<y>1</y>
+				<!-- ここ -->
+				<z>XXX</z>
+			</Scale>
+			<Link>
+				<!-- 相対パスに変更 -->
+				<href>files/blade_paint_it_black_top.dae</href>
+			</Link>
+			<ResourceMap>
+			</ResourceMap>
+		</Model>
+	</Placemark>
+	
+	<Placemark>
+		<name>blade</name>
+		<LookAt>
+			<!-- ここ -->
+			<longitude>XXX</longitude>
+			<latitude>XXX</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>45</tilt>
+			<range>1000</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Model id="model_8">
+			<altitudeMode>relativeToGround</altitudeMode>
+			<Location>
+				<!-- ここ -->
+				<longitude>XXX</longitude>
+				<latitude>XXX</latitude>
+				
+				<!-- ここ -->
+				<altitude>XXX</altitude>
+			</Location>
+			<Orientation>
+				<heading>XXX</heading>
+				<tilt>0</tilt>
+				
+				<!-- ここ -->
+				<roll>120</roll>
+			</Orientation>
+			<Scale>
+				<x>1</x>
+				<y>1</y>
+				<!-- ここ -->
+				<z>XXX</z>
+			</Scale>
+			<Link>
+				<!-- 相対パスに変更 -->
+				<href>files/blade.dae</href>
+			</Link>
+			<ResourceMap>
+			</ResourceMap>
+		</Model>
+	</Placemark>
+	
+	<Placemark>
+		<name>blade</name>
+		<LookAt>
+			<!-- ここ -->
+			<longitude>XXX</longitude>
+			<latitude>XXX</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>45</tilt>
+			<range>1000</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<Model id="model_8">
+			<altitudeMode>relativeToGround</altitudeMode>
+			<Location>
+				<!-- ここ -->
+				<longitude>XXX</longitude>
+				<latitude>XXX</latitude>
+				
+				<!-- ここ -->
+				<altitude>XXX</altitude>
+			</Location>
+			<Orientation>
+				<heading>XXX</heading>
+				<tilt>0</tilt>
+				
+				<!-- ここ -->
+				<roll>240</roll>
+			</Orientation>
+			<Scale>
+				<x>1</x>
+				<y>1</y>
+				<!-- ここ -->
+				<z>XXX</z>
+			</Scale>
+			<Link>
+				<!-- 相対パスに変更 -->
+				<href>files/blade.dae</href>
+			</Link>
+			<ResourceMap>
+			</ResourceMap>
+		</Model>
+	</Placemark>
